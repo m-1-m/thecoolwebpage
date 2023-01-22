@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>The cool web page</h1>
+
+  <p><strong>Try</strong> to find all the secrets! (there are 9. They say: GOOD JOB YOU CLICKED ME!)</p>
+
+  <p> </p>
+
+  <button type="button" onclick="document.getElementById('bob').style.display='block'">Click me to say hello.</button>
+
+  <p id="bob" style="display:none">Hello!</p>
+
+  <p id="bob"></p>
+
+  <button type="button" onclick="document.getElementById('bob').style.display='none'">Click me to hide hello.</button>
+
+  <p> </p>
+
+  <p> </p>
+
+  <p onclick="this.innerHTML='GOOD JOB YOU CLICKED ME!'">Click me.</p>
+
+  <p> </p>
+
+  <p> </p>
+
+
+  <span onmouseover="this.style.color='blue'">Hi!</span>
+
+  <span onmouseover="this.style.color='red'">Hi!</span>
+
+  <span onmouseover="this.style.color='green'">Hi!</span>
+
+  <span onmouseover="this.style.color='purple'">Hi!</span>
+
+  <span onmouseover="this.style.color='orange'">Hi!</span>
+
+  <span onclick="this.innerHTML='GOOD JOB YOU CLICKED ME!'">Hi!</span>
+
+  <p> </p>
+
+  <p> </p>
+
+  <p onclick="this.innerHTML='GOOD JOB YOU CLICKED ME!'">Click the button (below) to sort the numbers in random order.
+  </p>
+
+  <button onclick="asdf()">The button</button>
+
+  <p id="jo"></p>
+
+  <script>
+    var points = [40, 100, 1, 5, 25, 10];
+    document.getElementById("jo").innerHTML = points;
+
+    function asdf() {
+      points.sort(function (a, b) {return 0.5 - Math.random()});
+      document.getElementById("jo").innerHTML = points;
+    }
+
+  </script>
+
+  <p onclick="this.innerHTML='GOOD JOB YOU CLICKED ME!'">The date:</p>
+
+  <p id="hg"></p>
+
+  <script>
+    document.getElementById("hg").innerHTML = new Date().toDateString();
+  </script>
+
+  <p> </p>
+
+  <p> </p>
+
+  <p id="em"></p>
+
+  <script>
+    var day;
+    switch (new Date().getDay()) {
+      case 0:
+        day = "Sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+    }
+    document.getElementById("em").innerHTML = "Today is " + day;
+  </script>
+
+  <p> </p>
+
+  <p> </p>
+
+  <button type="button" onclick="document.getElementById('jam').style.display='block'">Click me</button>
+
+  <p id="jam" style="display:none">GOOD JOB YOU CLICKED ME!</p>
+
+  <p id="jam"></p>
+
+  <span onmouseover="this.innerHTML='GOOD JOB YOU CLICKED ME!'">???</span>
+
+  <p> </p>
+
+  <p> </p>
+
+  <p>Input your age and click the button:</p>
+
+  <input id="age" value="10" />
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="de"></p>
+
+  <script>
+    function myFunction() {
+      var age, voteable;
+      age = Number(document.getElementById("age").value);
+      if (isNaN(age)) {
+        voteable = "Input is not a number";
+      } else {
+        voteable = (age < 18) ? "Too young" : "Old enough";
+      }
+      document.getElementById("de").innerHTML = voteable;
+    }
+
+  </script>
+
+  <p> </p>
+
+  <p> </p>
+
+
+  <button onclick="random()">Random</button>
+  <p id="one"></p>
+
+  <script>
+    function random() {
+
+      document.getElementById("one").innerHTML = Math.floor(Math.random() * 101);
+    }
+  </script>
+
+  <p> </p>
+
+  <p> </p>
+
+  <span onmouseover="this.style.color='blue'">L</span>
+  <p> </p>
+  <span onmouseover="this.style.color='red'">O</span>
+  <p> </p>
+  <span onmouseover="this.style.color='green'">L</span>
+
+  <p> </p>
+  <p> </p>
+
+  <button type="button" onclick="document.getElementById('qqq').style.display='block'">Don't click me!</button>
+
+  <p id="qqq" style="display:none"><span onmouseover="this.innerHTML='GOOD JOB YOU CLICKED ME!'">Hey!</span></p>
+
+  <p id="qqq"></p>
+  <p> </p>
+
+  <p style="font-size:100%;"><mark>This is tiny</mark></p>
+  <p style="font-size:90%;"><mark>This is tiny</mark></p>
+  <p style="font-size:80%;"><mark>This is tiny</mark></p>
+  <p style="font-size:70%;"><mark>This is tiny</mark></p>
+  <p style="font-size:60%;"><mark>This is tiny</mark></p>
+  <p style="font-size:50%;"><mark>This is tiny</mark></p>
+  <p style="font-size:40%;"><mark>This is tiny</mark></p>
+  <p style="font-size:30%;"><mark>This is tiny</mark></p>
+  <p style="font-size:20%;"><mark>This is tiny</mark></p>
+  <p style="font-size:10%;"><mark>This is tiny</mark></p>
+  <p> </p>
+
+  <p style="color:red;">R</p>
+  <p style="color:orange;">a</p>
+  <p style="color:yellow;">i</p>
+  <p style="color:green;">n</p>
+  <p style="color:blue;">b</p>
+  <p style="color:purple;">o</p>
+  <p style="color:red;">w</p>
+
+  <p onclick="this.innerHTML='GOOD JOB YOU CLICKED ME!'">!</p>
+
+  <p> </p>
+  <p> </p>
+
+  <p onclick="this.innerHTML='GOOD JOB YOU CLICKED ME!'"><bdo dir="rtl">Click me now!!</bdo></p>
+
+  <p> </p>
+  <p> </p>
+
+  <script>
+    function was() {
+      alert("Stop!");
+    }
+  </script>
+  </head>
+
+  <body>
+    <p>Do not type anything in this text</p>
+    <input type="text" onkeypress="was()">
+
+    <p>
+      <p />
+    <p>
+      <p />
+
+    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Do not touch this text</h1>
+
+    <p>
+      <p />
+    <p>
+      <p />
+
+      <button onClick="myTimer = setInterval(myCounter, 12.5)">Start counter!</button>
+
+    <p id="a">Click on the button above and I will count forever.</p>
+
+    <button onClick="clearInterval(myTimer)">Stop counter!</button>
+
+
+    <script>
+      var c = 0;
+      function myCounter() {
+        document.getElementById("a").innerHTML = ++c;
+      }
+    </script>
+
+    <p>
+      <p />
+    <p>
+      <p />
+
+      <script>
+        var myWindow;
+        function openWin() {
+          myWindow = window.open("", "", "width=400, height=200");
+          myWindow.blur();
+        }
+
+      </script>
+
+      <input type="button" value="Open new window" onclick="openWin()">
+
+    <p>
+      <p />
+    <p>
+      <p />
+
+      <script>
+        function myFunction(e) {
+          x = e.clientX;
+          y = e.clientY;
+          coor = "Coordinates: (" + x + "," + y + ")";
+          document.getElementById("b").innerHTML = coor
+        }
+
+        function clearCoor() {
+          document.getElementById("b").innerHTML = "";
+        }
+      </script>
+
+    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)"
+      onmouseout="clearCoor()"></div>
+
+    <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+
+    <p id="b"></p>
+
+    <p>I am normal</p>
+    <p style="color:red;">I am red</p>
+    <p style="color:blue;">I am blue</p>
+    <p style="font-size:50px;">I am big</p>
+
+    <h1 style="color:blue;">Blue!</h1>
+    <p style="color:red;">RED!!!</p>
+
+    <form action="/action_page.php">
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    </form>
+
+    <div style="position:relative;">
+      <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF">
+      </div>
+      <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;background-color:#73AD21">
+      </div>
+      <div
+        style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+        <h1>YAY</h1>
+        <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">STREACH</div>
+        <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:30px;">Colors,
+          <span style="background-color:#B4009E;color:#ffffff;"> Boxes</span>
+        </div>
+      </div>
+    </div>
+
+    <p>Pizza:
+      <p />
+      <img src="pizza.gif" alt="pizza" style="width:200px;height:150px;">
+
+    <p>
+      <p />
+      <span style="cursor:progress">loading...</span><br>
+      <span style="cursor:wait">loading..</span><br>
+    <p>
+      <p />
+
+    <p>Illution:
+      <p />
+      <img src="illution.gif" alt="pizza" style="width:150px;height:150px;">
+
+
+    <p>
+      <p />
+
+  </body>
+
+</html>
